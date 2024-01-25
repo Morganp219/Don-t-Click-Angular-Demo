@@ -1,0 +1,15 @@
+<div>
+  
+  <span>
+    <h1>Don't press the red button!</h1>
+    <!-- Log out the amount of times the user has tapped the red button -->
+    <p>Doh, you pressed the red button {{tapCounter}} times</p>
+  </span>
+<!-- @If is new in angular this supports the use of Elseif, Else and If, This does not require a parent tag for it to work! -->
+  @if (tapCounter >= 1) {
+    <!-- Pass in our tap counter for our other if -->
+    <app-someonetapped [tapCount]="tapCounter"></app-someonetapped>
+  }
+  //Listen to the event emitter and in the TS add 1 to the counter
+  <app-dontpress (onClick)="onTap()"></app-dontpress>
+</div>

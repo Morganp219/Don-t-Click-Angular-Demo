@@ -1,0 +1,26 @@
+p {
+    font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace;
+
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+span {
+    flex-grow: 1;
+}
+img {
+    margin-bottom: 190px;
+}
+app-someonetapped {
+    margin-bottom: 90px;
+}
